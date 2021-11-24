@@ -1,0 +1,22 @@
+{
+  "name": "node_mocha",
+  "version": "1.0.0",
+  "description": "this is a sample of a nodejs project with mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsalazar2015/node_mocha.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsalazar2015/node_mocha/issues"
+  },
+  "homepage": "https://github.com/jsalazar2015/node_mocha#readme",
+  "dependencies": {
+    "mocha": "^9.1.3"
+  }
+}
