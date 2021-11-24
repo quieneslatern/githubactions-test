@@ -7,10 +7,16 @@ describe('Person', function() {
     const FIRST_NAME = 'JOHN';
     const LAST_NAME = 'DOE';
     const DATE_OF_BIRTH = new Date('1990-06-06');
+    const ADDRESS = {
+        city: 'Toronto',
+        postalCode: 'A3B5E8'
+    }
 
     // runs once before the first test in this block
     before(function() {
         this.myPerson = new Person(FIRST_NAME, LAST_NAME, DATE_OF_BIRTH);
+
+        this.myPerson.setAddress(ADDRESS);
     });
 
     it('should return the correct name when getName is called', function() {
@@ -23,6 +29,12 @@ describe('Person', function() {
         const expectedYear = 1990;
 
         assert.equal(this.myPerson.getBirthYear(), expectedYear);
+    });
+
+    it('should return the correct city when getCity is called', function() {
+        const expectedCity = 'Toronto';
+
+        assert.equal(this.myPerson.getCity(), expectedCity);
     });
 
     // runs once after the last test in this block

@@ -13,6 +13,14 @@ class Person {
     getBirthYear() {
         return this.dateOfBirth.getFullYear() - 1;
     }
+
+    getCity() {
+        return this.address.city;
+    }
+
+    setAddress(address) {
+        this.address = address;
+    }
 }
 
 module.exports = Person;
