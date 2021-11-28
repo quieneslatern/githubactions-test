@@ -16,6 +16,7 @@ jobs:
       run: |
         npm i
         npm i -g eslint
+        pwd
     - name: Run ESLint
       run: eslint . --ext .js,.jsx,.ts,.tsx
 
