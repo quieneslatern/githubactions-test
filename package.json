@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "format": "prettier --write",
+    "format": "prettier --write .",
     "start": "node index.js"
   },
   "repository": {
