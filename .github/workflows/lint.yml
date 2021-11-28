@@ -15,7 +15,7 @@ jobs:
     - name: Install modules
       run: |
         npm i
-        npm i eslint
+        npm i -g eslint
     - name: Run ESLint
       run: eslint . --ext .js,.jsx,.ts,.tsx
 
