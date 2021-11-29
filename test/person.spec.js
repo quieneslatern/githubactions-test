@@ -26,7 +26,7 @@ describe('Person', function() {
     });
 
     it('should return the correct year when getBirthYear is called', function() {
-        const expectedYear = 1990;
+        const expectedYear = 1999;
 
         assert.equal(this.myPerson.getBirthYear(), expectedYear);
     });
